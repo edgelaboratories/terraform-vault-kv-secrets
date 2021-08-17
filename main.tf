@@ -10,7 +10,7 @@ resource "vault_generic_secret" "this" {
 data "vault_policy_document" "this" {
   rule {
     description  = "Secrets policy for ${var.owner}"
-    path         = local.path
+    path         = "${var.kv_path}/data/${var.owner}"
     capabilities = var.capabilities
   }
 }
