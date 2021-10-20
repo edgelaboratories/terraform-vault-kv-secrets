@@ -10,7 +10,7 @@ variable "owner" {
 
 variable "secrets" {
   description = "A mapping of key/value that will be saved in the secrets KV store."
-  type        = map(string)
+  type        = map
   default     = {}
   sensitive   = true
 }
