@@ -9,8 +9,8 @@ variable "owner" {
 }
 
 variable "secrets" {
-  description = "A mapping of key/value that will be saved in the secrets KV store."
-  type        = map
+  description = "A secret that will be saved in the secrets KV store (it will be JSON encoded)."
+  type        = any
   default     = {}
   sensitive   = true
 }
