@@ -8,7 +8,7 @@ In your Terraform file, instanciate the module with:
 
 ```hcl
 module "droopy_secrets" {
-  source = "git@github.com:edgelaboratories/terraform-vault-kv-secrets.git?ref=v1.0.1"
+  source = "github.com/edgelaboratories/terraform-vault-kv-secrets.git?ref=v2.0.0"
 
   owner = "droopy"
   secrets = {

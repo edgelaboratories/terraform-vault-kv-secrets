@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     vault = {
-      source = "cyrilgdn/vault"
+      source = "hashicorp/vault"
     }
   }
 }
